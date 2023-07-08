@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Auto Brightness Tile</string>
+    <string name="add_quick_tile_message">Add \"Auto Brightness\" Quick tile\nfrom the Quick Settings Panel to toggle the adaptive brightness in one click from anywhere.</string>
+</resources>

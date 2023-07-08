@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#263238"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="16dp"
+        android:textColor="@android:color/white"
+        android:text="@string/add_quick_tile_message"/>
+
+    <Button
+        android:id="@+id/auto_brightness_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#673AB7"
+        android:textColor="#fff"
+        android:padding="16dp"
+        android:elevation="10dp"
+        android:textAllCaps="false"
+        android:text="Auto Brightness ON"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
