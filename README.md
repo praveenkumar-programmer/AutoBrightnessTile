@@ -33,10 +33,15 @@
 <br>
 <br>
 
-<p align="center">
 <img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/Auto Brightness tile.png?raw=true" alt="screenshot1" width="1080">
-<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 1.png?raw=true" alt="screenshot1" width="400">
-<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 2.png?raw=true" alt="screenshot2" width="400">
+<br>
+
+<p align="center">
+	<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 1.png?raw=true" alt="screenshot1" width="400">
+	&nbsp
+	&nbsp
+	&nbsp
+	<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 2.png?raw=true" alt="screenshot2" width="400">
 </p>
 
 <br>
