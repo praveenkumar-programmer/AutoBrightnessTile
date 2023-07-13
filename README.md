@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/praveenkumar-programmer/AutoBrightnessTile"><img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/icon-playstore.png?raw=true" alt="Auto Brightness Tile" width="200" style="margin-bottom:0.3cm"></a>
+  <a href="https://github.com/praveenkumar-programmer/AutoBrightnessTile"><img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/app-icon.png?raw=true" alt="Auto Brightness Tile" width="200" style="margin-bottom:0.3cm"></a>
 	
   **Auto Brightness Tile**
 </h1>
@@ -64,7 +64,13 @@
 
 ## Download
 
-You can download the latest version of Missed call Bot from the Releases section.                                                                                   
+You can download the latest version of Missed call Bot from Playstore.   
+
+<a href="https://play.google.com/store/apps/details?id=com.xcodeapps.autobrightnesstile">
+	<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/playstore.png?raw=true" alt="screenshot1">
+</a>
+
+You can download the latest version of Missed call Bot from the Releases section.   
 [Click here to Download](https://github.com/praveenkumar-programmer/AutoBrightnessTile/releases/download/v1.0/message.bot.apk)
 
 <br>
