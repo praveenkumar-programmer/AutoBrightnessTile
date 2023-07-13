@@ -67,10 +67,12 @@
 You can download the latest version of Missed call Bot from Playstore.   
 
 <a href="https://play.google.com/store/apps/details?id=com.xcodeapps.autobrightnesstile">
-	<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/playstore.png?raw=true" alt="screenshot1">
+	<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/playstore.png?raw=true" alt="playstore" width="200">
 </a>
+<br>
+<br>
 
-You can download the latest version of Missed call Bot from the Releases section.   
+You can also download the latest version of Missed call Bot from the Releases section.   
 [Click here to Download](https://github.com/praveenkumar-programmer/AutoBrightnessTile/releases/download/v1.0/message.bot.apk)
 
 <br>
