@@ -1,5 +1,5 @@
 <h1 align="center">
-  <a href="https://github.com/praveenkumar-programmer/AutoBrightnessTile"><img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/icon-playstore.png?raw=true" alt="Auto Brightness Tile" width="200" style="margin-bottom:0.3cm"></a>
+  <a href="https://github.com/praveenkumar-programmer/AutoBrightnessTile"><img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/icon-playstore.png?raw=true" alt="Auto Brightness Tile" width="200" style="margin-bottom:0.3cm"></a>
 	
   **Auto Brightness Tile**
 </h1>
@@ -34,8 +34,8 @@
 <br>
 
 <p align="center">
-<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/master/port 1.png?raw=true" alt="screenshot1">
-<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/master/port 2.png?raw=true" alt="screenshot2">
+<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 1.png?raw=true" alt="screenshot1">
+<img src="https://github.com/praveenkumar-programmer/AutoBrightnessTile/blob/main/port 2.png?raw=true" alt="screenshot2">
 </p>
 
 <br>
