@@ -3,7 +3,6 @@ package com.xcodeapps.autobrightnesstile
 import android.provider.Settings
 import android.service.quicksettings.Tile
 import android.service.quicksettings.TileService
-import com.xcodeapps.autobrightnesstile.PermissionsHelper.runWithWriteSettingsPermission
 import com.xcodeapps.autobrightnesstile.SettingsModifier.toggleAdaptiveBrightness
 
 class AdaptiveBrightnessTileService: TileService() {
@@ -14,7 +13,7 @@ class AdaptiveBrightnessTileService: TileService() {
     }
 
     private fun updateTileState() {
-        runWithWriteSettingsPermission(this) {
+        if (isWriteSystemPermissionGranted(this)) {
             this.qsTile?.let {
                 it.state = if (Settings.System.getInt(this.contentResolver, Settings.System.SCREEN_BRIGHTNESS_MODE)
                     == Settings.System.SCREEN_BRIGHTNESS_MODE_AUTOMATIC
@@ -25,7 +24,7 @@ class AdaptiveBrightnessTileService: TileService() {
     }
 
     override fun onClick() {
-        runWithWriteSettingsPermission(this) {
+        runOrRequestPermissionAndCollapse(this) {
             toggleAdaptiveBrightness(this, qsTile)
         }
         super.onClick()

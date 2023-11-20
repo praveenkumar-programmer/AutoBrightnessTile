@@ -8,7 +8,6 @@ import android.graphics.drawable.Icon
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
-import com.xcodeapps.autobrightnesstile.PermissionsHelper.runWithWriteSettingsPermission
 import com.xcodeapps.autobrightnesstile.SettingsModifier.getCurrentStateOfAutoBrightness
 import com.xcodeapps.autobrightnesstile.SettingsModifier.toggleAdaptiveBrightness
 
@@ -23,7 +22,7 @@ class MainActivity : Activity() {
         requestAddTileService()
         button = findViewById(R.id.auto_brightness_button)
         button?.setOnClickListener {
-            runWithWriteSettingsPermission(this) {
+            runOrRequestPermission(this) {
                 toggleAdaptiveBrightness(this)
             }
             refreshButtonState()
