@@ -3,11 +3,14 @@ package com.xcodeapps.autobrightnesstile
 import android.app.Activity
 import android.app.StatusBarManager
 import android.content.ComponentName
+import android.content.SharedPreferences
 import android.graphics.Color
 import android.graphics.drawable.Icon
 import android.os.Build
 import android.os.Bundle
 import android.widget.Button
+import android.widget.Switch
+import com.xcodeapps.autobrightnesstile.SettingsModifier.RETURN_TO_PREVIOUS_BRIGHTNESS
 import com.xcodeapps.autobrightnesstile.SettingsModifier.getCurrentStateOfAutoBrightness
 import com.xcodeapps.autobrightnesstile.SettingsModifier.toggleAdaptiveBrightness
 
@@ -26,6 +29,14 @@ class MainActivity : Activity() {
                 toggleAdaptiveBrightness(this)
             }
             refreshButtonState()
+        }
+        val sharedPreferences: SharedPreferences = this.getSharedPreferences("preferences", 0)
+        val returnToPreviousBrightness = findViewById<Switch>(R.id.return_to_previous_brightness)
+        returnToPreviousBrightness.isChecked = sharedPreferences.getBoolean(
+            RETURN_TO_PREVIOUS_BRIGHTNESS, false)
+        returnToPreviousBrightness.setOnCheckedChangeListener { _, shouldReturnToPreviousBrightness ->
+            sharedPreferences.edit()
+                .putBoolean(RETURN_TO_PREVIOUS_BRIGHTNESS, shouldReturnToPreviousBrightness).apply()
         }
     }
 

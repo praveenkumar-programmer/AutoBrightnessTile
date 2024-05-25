@@ -28,14 +28,16 @@ object SettingsModifier {
                     Settings.System.SCREEN_BRIGHTNESS_MODE,
                     Settings.System.SCREEN_BRIGHTNESS_MODE_MANUAL
                 )
-                val currentBrightnessValue = Settings.System.getInt(
-                    context.contentResolver, Settings.System.SCREEN_BRIGHTNESS
-                )
-                val newBrightnessValue =
-                    sharedPreferences.getInt("current_brightness", currentBrightnessValue)
-                Settings.System.putInt(
-                    context.contentResolver, Settings.System.SCREEN_BRIGHTNESS, newBrightnessValue
-                )
+                if (sharedPreferences.getBoolean(RETURN_TO_PREVIOUS_BRIGHTNESS, false)) {
+                    val currentBrightnessValue = Settings.System.getInt(
+                        context.contentResolver, Settings.System.SCREEN_BRIGHTNESS
+                    )
+                    Settings.System.putInt(
+                        context.contentResolver,
+                        Settings.System.SCREEN_BRIGHTNESS,
+                        sharedPreferences.getInt(CURRENT_BRIGHTNESS, currentBrightnessValue)
+                    )
+                }
                 tile?.state = Tile.STATE_INACTIVE
                 tile?.updateTile()
                 Toast.makeText(context, "Adaptive brightness disabled", Toast.LENGTH_SHORT).show()
@@ -44,8 +46,7 @@ object SettingsModifier {
                 val currentBrightnessValue = Settings.System.getInt(
                     context.contentResolver, Settings.System.SCREEN_BRIGHTNESS
                 )
-                sharedPreferences.edit().putInt("current_brightness", currentBrightnessValue)
-                    .apply()
+                sharedPreferences.edit().putInt(CURRENT_BRIGHTNESS, currentBrightnessValue).apply()
                 Settings.System.putInt(
                     context.contentResolver,
                     Settings.System.SCREEN_BRIGHTNESS_MODE,
@@ -65,5 +66,8 @@ object SettingsModifier {
     enum class AutoBrightnessState {
         AUTO_BRIGHTNESS_ENABLED, AUTO_BRIGHTNESS_DISABLED, UNKNOWN
     }
+
+    const val CURRENT_BRIGHTNESS = "current_brightness"
+    const val RETURN_TO_PREVIOUS_BRIGHTNESS = "return_to_previous_brightness"
 
 }

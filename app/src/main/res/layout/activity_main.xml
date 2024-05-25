@@ -5,28 +5,59 @@
     android:layout_height="match_parent"
     android:background="#263238"
     android:orientation="vertical"
-    android:gravity="center"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:gravity="center"
-        android:layout_margin="16dp"
-        android:textColor="@android:color/white"
-        android:text="@string/add_quick_tile_message"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center">
 
-    <Button
-        android:id="@+id/auto_brightness_button"
-        android:layout_width="wrap_content"
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_margin="16dp"
+            android:textColor="@android:color/white"
+            android:text="@string/add_quick_tile_message"/>
+
+        <Button
+            android:id="@+id/auto_brightness_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#673AB7"
+            android:textColor="#fff"
+            android:padding="16dp"
+            android:elevation="10dp"
+            android:textAllCaps="false"
+            android:text="Auto Brightness ON"
+            android:layout_gravity="center"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="#673AB7"
-        android:textColor="#fff"
         android:padding="16dp"
-        android:elevation="10dp"
-        android:textAllCaps="false"
-        android:text="Auto Brightness ON"
-        android:layout_gravity="center"/>
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginEnd="100dp"
+            android:text="Return to previously set brightness when turing off Auto brightness"/>
+
+        <Switch
+            android:id="@+id/return_to_previous_brightness"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-100dp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
 
 </LinearLayout>
